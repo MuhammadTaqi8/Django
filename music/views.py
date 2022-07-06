@@ -6,11 +6,11 @@ from django.shortcuts import render
 # Create your views here.
 def index(request):
     all_albums = Album.objects.all()
-    template = loader.get_template('music/index.html')
+    # template = loader.get_template('music/index.html')
     context = {
         'all_albums': all_albums
     }
-    return render(template.render(context, request))
+    return render(request, 'music/index.html', context)
 
 def detail(request, album_id):
     try:
