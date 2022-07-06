@@ -55,7 +55,7 @@ ROOT_URLCONF = 'website.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [r'C:\\Users\\HP\Desktop\\Github\django\\ist\website\\music\\templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
